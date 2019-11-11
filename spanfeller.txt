@@ -1,0 +1,17 @@
+In addition to poor planning and communication around the video player, multiple
+sources say Spanfeller wouldn’t allow the tech team to implement video tracking
+analytics on JW Player, so no one had any idea how many views videos were
+getting. One theory was that Spanfeller thought implementing analytics would
+take developer resources away from building the new video platform and player,
+though employees said implementing analytics is a relatively easy fix. Another
+was more direct: “That’s Jim wanting to be in control. We could have video
+analytics today. He’s trying to micromanage,” the tech employee said last week.
+
+Spanfeller said that he wasn’t preventing, “just delaying” analytics from being
+implemented, on the grounds that it’s “not particularly useful information at
+the moment.” (The day after Deadspin contacted Spanfeller for comment, the tech
+team was given the green light to roll out video analytics.)
+
+This isn’t the first time Spanfeller has been accused of micromanaging. Multiple
+people who worked for him at The Daily Meal (part of Spanfeller Media Group)
+told Deadspin that Spanfeller couldn’t cede any control.

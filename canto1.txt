@@ -1,0 +1,190 @@
+Computer Lab Vim Tutorial
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.1: Moving the cursor
+Instructions: Follow the path through the forest dark  using h, j, k and l.
+|             Hint: if you accidentally start typing text, press Esc
+|       .-------.   to leave insert mode and u to undo any changes.
+|       |       |
+\_______/       |
+                |
+                |
+                \____.
+                     |    .-----------------.
+                     |    |                 |
+           .---------+----+----.            |
+           \_________/    |    |            |
+                          |    |            |
+                          |    |            |
+                          |    \________.   \________ Well done! Now scroll
+                          |             |             down to lesson 1.3
+                          |             |             with j.
+                          |             |
+                          \_____________/
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lession 1.3: Text editing - deletion
+Instructions: Correct the lines of text below by deleting the
+unneccesary characters with  x .
+
+Midwayyy upoon the jo0urney of ourr liffe
+I found myself withine a forrest darke,
+FFFFor ttthe straightforward pathway haad beeeen llost.
+
+Aaas Gregor Samsa awokke onne moorning frrom uneeasy ddreams hhe founnd
+himmself trransformed inn hiis bbed intoo a giiigantic insecct.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.4: Text editing - insertion
+Make the pairs of lines match up by inserting the missing text.
+Hint: if you're having trouble with the escape key, try Ctrl-[ instead.
+
+
+Oliver w the vim of matic course of trea decep.
+Oliver was the victim of a systematic course of treachery and deception.
+
+ere poston of airs d n all impro.
+Here the position of affairs had not at all improved.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.5: Text editing - appending
+Complete the lines by filling in the missing word, then pressing A
+to append to the line. Remember, return the cursor to the left with 0.
+
+
+"Do you mean that wife and you wi
+"Do you mean that your wife and you wish to leave?"
+
+"I heard it distinctly, am sure that it was really the sob o
+"I heard it distinctly, and I am sure that it was really the sob of a woman."
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 1.6: Text editing - appending from external command
+
+Add the output of "ps" below using :r!ps
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.1: Deletion commands
+Move the cursor to the first letter of the word to be deleted, then press
+dw to delete the entire word. Rinse and repeat.
+
+
+The rabbit-hole VIM went straight on like a IS tunnel for some way, and
+then GOOD dipped suddenly down, IT so suddenly that Alice had not a moment
+to WILL think MAKE about YOU stopping herself before she found herself falling
+down a very deep HAPPY well.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.2: More deletion commands
+Place the cursor on the first incorrect character of each line
+and press d$ to delete to the end of the line.
+
+
+
+The Owl and the Pussycat went to sea[this is a bit that you need to delete]
+In a beautiful pea-green boat,IT WASN'T MADE OF PEAS
+They took some honey, and plenty of money,***Always important to take money***
+Wrapped up in a five pound note. #Or $8.07 USD on 14 Nov 2010
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.4: Using a count for a motion
+
+Try to move from the point marked 'a' to the point marked 'b' using
+one command (e.g. 3e or 2w).
+
+       a           b
+e stands for the end of the word.
+
+                        a      b
+w means word, that is, move to the next word.
+
+                        a          b        c           d
+punctation counts as a word, so this comma, and this one, count.
+
+c                    a             b
+use 0 to jump to the first character of the line.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.6: Operating on lines
+Delete the lines that don't belong below using dd. It's up to you to
+pick which ones don't belong!
+Hint: Precede the command with a count to delete multiple lines,
+e.g. 2dd - delete two lines.
+
+I said a hip hop, hippie to the hippie
+I wandered lonely as a cloud
+That floats on high o'er vales and hills,
+When all at once I saw a crowd,
+The hip, hip a hop, and you don't stop, a rock it
+To the bang bang boogie, say, up jump the boogie
+A host, of golden daffodils;
+To the rhythm of the boogie, the beat
+Beside the lake, beneath the trees,
+Now, what you hear is not a test, I'm rapping to the beat
+And me, the groove, and my friends are gonna try to move your feet
+Fluttering and dancing in the breeze.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.7: Yank and paste
+
+Open up aeneid.txt and copy the first four lines of the text v, y,
+and paste them below using p.
+
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 2.8: Switching between an open buffer
+
+Yank the text below, switch to the aeneid.txt buffer (it should still be open)
+using :b aeneid.txt (you can use tab autocomplete), and paste it. Then switch
+back to this buffer using bp.
+
+Tell me,
+Muse, how it all began. Why was Juno outraged?
+What could wound the Queen of the Gods with all her power?
+Why did she force a man, so famous for his devotion,
+to brave such rounds of hardship, bear such trials?
+Can such rage inflame the immortals’ hearts?
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.0: Changing text
+Change the negative words below to positive words of your choice using
+the cw or ciw commands.
+
+Pigeons are dirty, ugly birds. When I see a flock of them, I am filled with
+feelings of digust and contempt. I hate their stupid coos and annoying presence
+in parks.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.1: Changing text using manual search and replace
+
+Open spanfeller.txt, and
+replace the name of "Spanfeller" with yours using /Spanfeller, n and N to
+navigate between results, cw to change word, and . to repeat the change word
+action.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.2: Changing text using a regex
+Replace your name with your teacher's name in spanfeller.txt using :%/Spanfeller/Patrick/g
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 3.3: Navigating to beginning and ends of files
+Navigate to the beginning of this file using gg, and change this file's title to
+"Ye Olde Computer Barn Vim Tutorial v1.1618", then navigate down here with G.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lesson 4.1: Plugins
+Open up plugins.txt using fzf.vim. For help on installing fzf.vim, see: https://github.com/junegunn/fzf.vim
+Install it using the vim-plug package manager.
+
